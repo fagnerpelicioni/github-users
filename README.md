@@ -1,6 +1,6 @@
 # GitHub Users Web App
 
-Demo: 
+Demo: https://master.d3lhvu2dpoi2le.amplifyapp.com/
 # Dev env
 ```
 Node 14.15.1
