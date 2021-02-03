@@ -109,6 +109,7 @@ export default {
       } catch (e) {
         this.helper.loading = false;
         // Possibility of error in the request is dealt with, such as COR's error.
+        console.log(e.response);
         if (e && !e.request) {
           this.helper.feedback = ({
             show: true,
@@ -120,7 +121,7 @@ export default {
           this.helper.feedback = ({
             show: true,
             type: 'error',
-            message: e.response.data.error,
+            message: e.response.data.message,
           });
         } else if (e && e.response.status === 429) {
           this.helper.feedback = ({
