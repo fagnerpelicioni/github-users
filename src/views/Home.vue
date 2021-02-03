@@ -109,7 +109,6 @@ export default {
       } catch (e) {
         this.helper.loading = false;
         // Possibility of error in the request is dealt with, such as COR's error.
-        console.log(e.response);
         if (e && !e.request) {
           this.helper.feedback = ({
             show: true,
