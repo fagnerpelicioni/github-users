@@ -1,0 +1,83 @@
+
+.btn {
+  border-radius: $radius-lg;
+  font-size: $text-sm;
+  font-weight: $font-bold;
+  display: flex;
+  position: relative;
+  color: $white;
+  background: $primary;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+
+  &:hover {
+      opacity: 0.75;
+  }
+
+  &:focus {
+      outline: none;
+  }
+
+  &--color {
+      &-secondary {
+        color: $primary;
+        background: transparent;
+        border: 2px solid transparent;
+      }
+
+      &-green {
+        background: $green-600;
+      }
+
+      &-red {
+        background: $red-600;
+      }
+
+      &-blue {
+        background: $blue-600;
+      }
+  }
+
+  &--size {
+      &-full {
+        width: 100%;
+      }
+
+      &-large {
+        font-size: $text-lg;
+        padding: 0;
+
+        .btn__text { 
+          padding: 1.5rem 2rem;
+
+          @include screen(phone-only) {
+            padding: 1rem;
+            font-size: $text-sm;
+          }
+        }
+
+        &.btn--color-green .btn__icon {
+          background: $green-700;
+        }
+
+        &.btn--color-blue .btn__icon {
+          background: $blue-800;
+        }
+      }
+  }
+
+  &--active {
+    border: 2px solid $primary;
+  }
+
+  &__text {
+      padding: 0 1rem;
+      text-transform: uppercase;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+  }
+}

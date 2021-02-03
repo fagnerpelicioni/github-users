@@ -1,0 +1,46 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  margin: auto auto;
+  padding: 2rem;
+  border-radius: $radius-normal;
+  background-color: $white;
+
+  @include screen(phone-up) {
+    max-width: 480px;
+    height: 480px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: $transition-1;
+
+    &:hover {
+      transition: $transition-1;
+      transform: scale(1.1);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: $primary;
+      fill: $primary;
+    }
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}

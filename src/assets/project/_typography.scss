@@ -1,0 +1,95 @@
+.text {
+  font-size: $text-lg;
+  font-weight: $font-regular;
+
+  @include screen(phone-only) {
+    font-size: $text-sm;
+  }
+
+  &--weight {
+    &-black {
+      font-weight: $font-black;
+    }
+    &-heavy {
+      font-weight: $font-heavy;
+    }
+    &-bold {
+      font-weight: $font-bold;
+    }
+    &-medium {
+      font-weight: $font-medium;
+    }
+    &-light {
+      font-weight: $font-light;
+    }
+  }
+
+  &--color {
+    &-primary {
+      color: $primary;
+    }
+
+    &-green {
+      color: $green-600;
+    }
+
+    &-red {
+      color: $red-600;
+    }
+
+    &-black {
+      color: $black;
+    }
+  }
+
+  &--align {
+    &-center {
+      text-align: center;
+    }
+
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
+    }
+  }
+}
+
+.title {
+  color: $primary;
+  font-size: $text-3xl;
+  font-weight: $font-heavy;
+  margin-bottom: 1.5rem;
+  display: flex;
+
+  @include screen(phone-only) {
+    font-size: $text-2xl;
+    margin-bottom: 1.375rem;
+  }
+
+  &--center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &--secondary {
+    font-size: $text-xl;
+    text-transform: uppercase;
+
+    @include screen(phone-only) {
+      font-size: $text-lg;
+    }
+  }
+
+  &__icon {
+    margin-right: 1.875rem;
+
+    @include screen(phone-only) {
+      margin-right: 1rem;
+      max-width: 2rem;
+    }
+  }
+}

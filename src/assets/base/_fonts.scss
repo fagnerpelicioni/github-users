@@ -1,0 +1,38 @@
+/**
+ * Fonts
+*/
+
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("/fonts/Avenir-Black.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("/fonts/Avenir-Heavy.woff") format("woff");
+  font-weight: 800; // Originally 900 but using as a 800
+}
+
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("/fonts/Avenir-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("/fonts/Avenir-Roman.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("/fonts/Avenir-Light.woff") format("woff");
+  font-weight: 300;
+}
