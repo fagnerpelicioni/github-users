@@ -162,7 +162,7 @@ export default {
           this.helper.feedback = ({
             show: true,
             type: 'error',
-            message: e.response.data.error,
+            message: e.response.data.message,
           });
         } else {
           this.helper.feedback = ({

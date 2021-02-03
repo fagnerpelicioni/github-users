@@ -8,7 +8,7 @@ Npm 6.14.8
 Vue Cli 4.5.9
 
 ```
-Para usar um Github API Token diferente, alterar no arquivo .env
+- Caso seja necessário, a API Token do GitHub deve ser incluida arquivo .env
 
 # Tecnologias utilizadas
 - Vue.JS 2
